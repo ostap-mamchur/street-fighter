@@ -1,0 +1,17 @@
+.winner-fighter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-image: url(../../resources/confetti.gif);
+}
+
+.winner-fighter__name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.winner-fighter__image {
+    margin-top: 10px;
+    height: 350px;
+}

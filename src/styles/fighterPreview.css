@@ -1,0 +1,28 @@
+.fighter-preview___root {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  background-color: rgb(255,223,167, 0.8);
+  align-items: center;
+  border: 5px solid #ca9650;
+}
+
+/* .fighter-preview___right {
+}
+
+.fighter-preview___left {
+  align-items: flex-start;
+} */
+
+.fighter-preview___root > img {
+  height: 240px;
+}
+
+.fighter-preview___right__image {
+  transform: scaleX(-1);
+}
+
+.fighter-preview__skills {
+  list-style-type: none;
+  padding: 0;
+}

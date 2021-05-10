@@ -1,0 +1,144 @@
+.arena___root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('../../resources/arena.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arena___battlefield {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.arena___right-fighter img {
+  transform: scaleX(-1);
+}
+
+.arena___fighter img {
+  height: 480px;
+}
+
+.arena___fight-status {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+}
+
+.arena___fighter-name {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  font-size: 26px;
+  font-family: 'Arial Black';
+  font-weight: 700;
+}
+
+.arena___fighter-indicator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.arena___health-indicator {
+  width: 100%;
+  height: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.arena___health-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #ebd759;
+}
+
+.arena___fighter {
+  position: relative;
+}
+
+.animation-left__attack {
+  animation-name: fighter-left-attack;
+  animation-duration:250ms;
+  animation-timing-function: linear;
+}
+
+.animation-right__attack {
+  animation-name: fighter-right-attack;
+  animation-duration:250ms;
+  animation-timing-function: linear;
+}
+
+.animation__block {
+  animation-name: fighter-block;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+}
+
+.animation__getdamage {
+  animation-name: fighter-getdamage;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+}
+
+.fighter__loser {
+  transform: rotate(90deg) translate(150px, 0);
+  background-color:rgba(255,0,0, 0.7);
+}
+
+@keyframes fighter-left-attack {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes fighter-right-attack {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 25%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes fighter-block {
+  0% {
+    background-color: initial;
+  }
+  50% {
+    background-color:	rgba(128,128,128, 0.7);
+  }
+  100% {
+    background-color: initial;
+  }
+}
+
+@keyframes fighter-getdamage {
+  0% {
+    background-color: initial;
+  }
+  50% {
+    background-color:	rgba(255,0,0, 0.7);
+  }
+  100% {
+    background-color: initial;
+  }
+}
